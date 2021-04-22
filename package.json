@@ -1,12 +1,12 @@
 {
   "name": "wolai",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "wolai js/ts sdk",
   "main": "dst/index.js",
   "scripts": {
     "build": "npm run eslint && tsc",
-    "publish": "npm run build && npm publish",
     "eslint": "eslint --fix -c ./.eslintrc.js ./src/**",
+    "publish": "npm run build && npm publish",
     "prepare": "husky install"
   },
   "repository": {
