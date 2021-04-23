@@ -11,7 +11,6 @@ export interface IWolaiOauthAccessToken {
   expireSecond: number
 }
 
-
 export class Wolai {
   public readonly spaceId: string;
   public readonly spaceSecret: string;

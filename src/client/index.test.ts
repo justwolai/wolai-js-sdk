@@ -1,11 +1,10 @@
 import { Wolai } from './index';
 
-
 describe('获取空间访问token', () => {
   it('获取空间访问token成功',  async () => {
     const wolai = new Wolai({
-      spaceId: "6zmTzaMJAgTKaPebY8QogU",
-      spaceSecret: "raPT85rzRdFeqWUAv7oNasbMLfwd8VQYjABgiuxB6wNzxvG6g3g65jNDJRfLexSA14e5tcKM8U3g7eBQNYY76J2i"
+      spaceId: "inLJb7buL7zgszRDh65kyn",
+      spaceSecret: "5QUw2eCLCr9iYaDVKBhcBh4nDJ3y1xNgP5ZLe6bmcX26qJGJFBeca1tzY89fBANPkj2UHaMbrp4YZqgfiaqpvJbhuHmK8CpZeXRYLseFwGHHAghaxRDbkP6AHPAZNx3J"
     })
 
     const accessToken = await wolai.getAccessToken()
@@ -18,8 +17,8 @@ describe('获取空间访问token', () => {
 
   it('刷新访问token成功',  async () => {
     const wolai = new Wolai({
-      spaceId: "6zmTzaMJAgTKaPebY8QogU",
-      spaceSecret: "raPT85rzRdFeqWUAv7oNasbMLfwd8VQYjABgiuxB6wNzxvG6g3g65jNDJRfLexSA14e5tcKM8U3g7eBQNYY76J2i"
+      spaceId: "inLJb7buL7zgszRDh65kyn",
+      spaceSecret: "5QUw2eCLCr9iYaDVKBhcBh4nDJ3y1xNgP5ZLe6bmcX26qJGJFBeca1tzY89fBANPkj2UHaMbrp4YZqgfiaqpvJbhuHmK8CpZeXRYLseFwGHHAghaxRDbkP6AHPAZNx3J"
     })
     await wolai.getAccessToken()
     const accessToken = await wolai.refreshAccessToken()
