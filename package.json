@@ -4,6 +4,7 @@
   "description": "wolai js/ts sdk",
   "main": "dst/index.js",
   "scripts": {
+    "test": "npx jest",
     "build": "npm run eslint && tsc",
     "eslint": "eslint --fix -c ./.eslintrc.js ./src/**",
     "publish": "npm run build && npm publish",
@@ -20,7 +21,10 @@
   },
   "homepage": "https://github.com/justwolai/wolai-js-sdk#readme",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^26.0.22",
     "@types/node": "^12.20.10",
+    "@types/qs": "^6.9.6",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
@@ -32,6 +36,9 @@
     "typescript": "^4.2.3",
     "yarn": "^1.22.10"
   },
-  "dependencies": {},
-  "_id": "wolai@1.0.0"
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.5.2",
+    "url": "^0.11.0"
+  }
 }
